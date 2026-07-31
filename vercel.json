@@ -5,7 +5,9 @@
     { "source": "/(.*)\\.html", "headers": [{"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"}] },
     { "source": "/", "headers": [{"key": "Cache-Control", "value": "public, max-age=0, must-revalidate"}] },
     { "source": "/(.*)\\.css", "headers": [{"key": "Cache-Control", "value": "public, max-age=60, stale-while-revalidate=600"}] },
-    { "source": "/(.*)\\.(js|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|webp|ico)", "headers": [{"key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400"}] }
+    { "source": "/(.*)\\.(js|woff2?|ttf|eot|svg|png|jpg|jpeg|gif|webp|ico)", "headers": [{"key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400"}] },
+    { "source": "/robots.txt", "headers": [{"key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400"}] },
+    { "source": "/sitemap.xml", "headers": [{"key": "Cache-Control", "value": "public, max-age=3600, stale-while-revalidate=86400"}] }
   ],
   "redirects": [
     { "source": "/index.php/:path*", "destination": "/:path*", "statusCode": 301 },
